@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/script.js" defer></script>
+    <title>Wether</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="header">
+        <div id="header__title">
+          <h1>My weather</h1>
+        </div>
+        <div id="header__search">
+          <div class="search__input">
+            <label for="search"></label>
+            <input type="text" name="search" id="search" placeholder="Wether in your city" />
+          </div>
+        </div>
+      </header>
+      <menu id="menu">
+        <div id="menu__container">
+          <ul id="header__menu">
+            <li class="menu__item"><a class="menu__link" data-name="today" href="#">Today</a></li>
+            <li class="menu__item"><a class="menu__link" data-name="five-days" href="#">5-day forecast</a></li>
+          </ul>
+        </div>
+      </menu>
+      <main>
+        <section id="today">
+          <div class="short-info"></div>
+          <div class="hourly-forecast"></div>
+          <div class="nearby-cities"></div>
+        </section>
+        <section id="five-days">
+          <div class="five-days-list"></div>
+          <div class="day-hourly"></div>
+        </section>
+        <section id="error">
+          <div class="error-404"></div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
